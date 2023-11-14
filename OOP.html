@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP &#128128</title>
+</head>
+<body>
+    <style>
+     *{
+        color: coral;
+        text-align: center;
+     }
+   h6{
+    color: purple;
+   }
+    </style>
+    <h1>Intro TO OOP</h1>
+    <h5>Open Console TO see the Result</h5>
+    <script>
+        class car{
+            constructor(make,model){
+                this.make = make;
+                this.model = model;
+                this.speed = 0;
+
+            }
+        accelerate(){
+            this.speed += 10;
+            console.log(` The ${this.make} ${this.model} is accelerating   `)
+        }
+        brake(){
+            if(this.speed>=10){
+                this.speed -= 10;
+                console.log(` The ${this.make} ${this.model} is slowind down, the  Current speed is ${this.speed} mph  `)
+            }
+            else{
+                console.log(` The ${this.make} ${this.model} is already stopped`);
+
+            }
+        
+        }
+        checkspeed(){
+            console.log(`The speed of the ${this.make} ${this.model} is ${this.speed} mph`);
+
+        }
+        }
+        let car1 = new car("Toyota","Camry");
+        car1.accelerate();
+        car1.checkspeed();
+        car1.accelerate();
+        car1.checkspeed();
+        car1.accelerate();
+        car1.checkspeed();
+        car1.accelerate();
+        car1.checkspeed();
+        car1.accelerate();
+        car1.checkspeed();
+        car1.brake();
+        car1.checkspeed();
+        car1.brake();
+        car1.brake();
+        car1.brake();
+    </script>
+</body>
+</html>

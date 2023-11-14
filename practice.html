@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Online Quiz</h1>
+
+    <script>
+        function showQuiz() {
+            document.getElementById("message").innerHTML = "Get Ready!";
+            setTimeout(function() {
+                document.getElementById("message").innerHTML = "";
+                // Yahan quiz questions dikhayein
+            }, 3000); // 3000 milliseconds (3 seconds) ke baad message ko hide karke quiz questions dikhayein
+        }
+
+        // Call the showQuiz function when the page loads
+        window.onload = showQuiz;
+    </script>
+
+    <div id="message"></div>
+</body>
+</html>

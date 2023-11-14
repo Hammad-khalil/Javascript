@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS EVENTS</title>
+  </head>
+
+  <body>
+    <script>
+      function hello() {
+        document.write("Text is Changed");
+      }
+      function change() {
+        document.write("Old Text Gone");
+      }
+    </script>
+
+    <button onclick="hello()">Click ME</button> <br />
+    <button ondblclick="hello()">On double click</button> <br />
+    <button oncontextmenu ="hello()">On Right click</button> <br />
+    <button onmouseenter ="hello()">Mouse Hover</button> <br />
+    <button onmouseout ="hello()">Mouse OUT</button> <br />
+    <button onmousedown ="hello()">Mouse Down</button> <br />
+    <button onmouseup ="hello()">Mouse UP</button> <br />
+    <button onkeypress ="hello()">Key Press</button> <br />
+    <button onkeyup ="hello()">Key up</button> <br />
+    <button onload="hello()">Load</button> <br />
+    <button onresize ="hello()">Resize</button> <br />
+    <button onscroll ="hello()">on Scroll</button> <br />
+    <p style="display: inline;" onmouseenter="change()">OLD TEXT</p>
+  </body>
+</html>

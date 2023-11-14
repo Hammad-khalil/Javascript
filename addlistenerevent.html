@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Listener Event</title>
+</head>
+<body>
+    <button id="btn" style="border-radius: -1%; color: crimson;">Functional Button</button>
+    <p id="para" style="color: crimson; font-size: 3px;"></p>
+<script>
+    let x = document.getElementById('btn');
+    let y = document.getElementById('para');
+    x.addEventListener("mouseenter", enter);
+    x.addEventListener("mouseleave", leave);
+    x.addEventListener("click", click);
+    function enter (){
+        y.innerHTML += "Mouse " + "<br>";
+    }Enter
+    function leave (){
+        y.innerHTML += "Mouse Exit" + "<br>";
+    }
+    function click (){
+        y.innerHTML += "Clicked!" + "<br>";
+    }
+</script>
+</body>
+</html>

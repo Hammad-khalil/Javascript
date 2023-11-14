@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INHERITANCE &#128128</title>
+</head>
+<body>
+    <h6>change</h6>
+    <script>
+       class employee{
+        constructor(name){
+            this.empname = name;
+            console.log(" Constructor : Employee");
+        }
+        info(){
+            console.log("EMPLOYEE NAME IS" + "   " + this.empname);
+        }
+       }
+       class manager extends employee{
+        info(){
+            console.log("Manager NAME IS" + "   " + this.empname);
+            super.info();
+        }
+        }
+        
+       let a = new manager("Hammad Khalil");
+       a.info();
+        
+    </script>
+</body>
+</html>

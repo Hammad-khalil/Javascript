@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6 style="color: crimson; font-family: cursive; text-align: center;">Open Console to see arguments function</h6>
+    
+    <script>
+        function magicFunction() {
+            // The "arguments" object helps us see what was passed.
+            // It's like a list of all the things we passed to the function.
+            
+            // Let's find out how many things we passed.
+            let numberOfThings = arguments.length;
+            
+            // Now, let's loop through the list and see each thing.
+            for (let i = 0; i < numberOfThings; i++) {
+                console.log("You passed:", arguments[i]);
+            }
+  }
+  
+  // Now, let's use our magic function:
+  magicFunction("apple", "banana", "cherry");
+</script>
+</body>
+</html>

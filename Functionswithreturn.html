@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking %</title>
+</head>
+<body>
+    <style>
+        *{
+            color: firebrick;
+            font-family: cursive;
+        text-align: center; 
+    margin-top: 9%;       }
+    </style>
+    <h5></h5>
+    <script>
+        function add(sci,chem,phy,eng,urdu,math){
+            var a = sci+chem+phy+eng+urdu+math;
+            return a;
+        }
+        function per(tt){
+         var check = tt/600*100;
+         return check;
+        }
+        var sum = add(86,89,76,96,70,56);
+       var see = per(sum);
+        document.write(`Addition of your Provided Values are : <br> ${sum} <br> and Percentage of your total values are : <br> ${see}%  `)
+
+    </script>
+</body>
+</html>

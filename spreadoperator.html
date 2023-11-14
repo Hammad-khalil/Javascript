@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator Done</title>
+    <style>
+        *{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h5 style="color: crimson; font-family: cursive;">Spread Operator
+    </h5>
+
+    <script>
+        function display(name, rest){
+            let sum = 0;
+          for(let i in rest){
+            sum = sum + rest[i];
+          }
+          document.write(`Name is ${name}. <br> values given are ${rest}. <br> sum of these values is ${sum} `);
+        }
+        let arr = [20,30,50];
+        display("Hammad",arr);
+    </script>
+</body>
+</html>

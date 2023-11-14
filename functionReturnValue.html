@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to get Percentage of the following Marks using return Values</title>
+</head>
+<body>
+
+
+    <script>
+        function sum(eng,urdu,math,sci,phy){
+        var a= eng+urdu+math+sci+phy;
+        return a;
+    };
+    var b =sum(97,99,92,95,96);
+    document.write("Your Total Marks are : <br>" + b);
+
+
+    function Percentage(tm){
+    var c = tm/500*100;
+    return c;
+    }
+    var d = Percentage(b)
+    document.write(" <br> Your Total percentage is : <br>" + d + "%");
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking constructor</title>
+</head>
+<body>
+    <script>
+        // Define a class called "Car" to represent a car
+class Car {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+    this.speed = 0; // Initialize speed to 0
+  }
+
+  // Method to accelerate the car
+  accelerate() {
+    this.speed += 10;
+    console.log(`The ${this.make} ${this.model} is accelerating. Current speed: ${this.speed} mph.`);
+  }
+
+  // Method to brake the car
+  brake() {
+    if (this.speed >= 10) {
+      this.speed -= 10;
+      console.log(`The ${this.make} ${this.model} is braking. Current speed: ${this.speed} mph.`);
+    } else {
+      console.log(`The ${this.make} ${this.model} is already stopped.`);
+    }
+  }
+
+  // Method to check the current speed of the car
+  checkSpeed() {
+    console.log(`Current speed of the ${this.make} ${this.model}: ${this.speed} mph.`);
+  }
+}
+
+// Create an instance of the Car class
+let myCar = new Car("Toyota", "Camry");
+
+// Perform some actions with the car
+myCar.accelerate(); // Accelerate the car
+myCar.checkSpeed(); // Check the speed
+myCar.brake();      // Brake the car
+myCar.checkSpeed(); // Check the speed
+myCar.brake();      // Brake the car again
+
+    </script>
+</body>
+</html>

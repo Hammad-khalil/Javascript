@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King</title>
+</head>
+<body>
+    <script>
+        abc = (name, ...rest) => {
+            let sum = 0;
+            for(let i in rest){
+                sum = sum + rest[i];
+            }
+            document.write(`Your Provided name is " ${name} " <br> And Sum of your Provided Values is " ${sum} "`);
+        }
+        abc("Hammad is King",10,300,190);
+
+    </script>
+</body>
+</html>

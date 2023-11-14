@@ -1,0 +1,368 @@
+<!-- /*Query Selector and ALL applied on lists*/ -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selectors</title>
+    <style>
+        a li{
+        list-style: none;
+        text-decoration: none;
+
+        }
+        a ul{
+        list-style: none;
+        text-decoration: none;
+
+        }
+        a{
+        list-style: none;
+        text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <h6 style="color: crimson;">Query Selectors</h6>
+    
+    <ul>
+      <a href="#">  <li class="demo">heading 1</li> </a>
+      <a href="#">  <li class="demo">heading 2</li> </a>
+      <a href="#">  <li class="demo">heading 3</li> </a>
+      <a href="#">  <li class="demo">heading 4</li> </a>
+    </ul>    
+    <script>
+        let a = document.querySelectorAll(".demo")[2];
+            a.innerHTML = "Changed ALL";
+            a.style.color = "fuchsia";
+    </script>
+</body>
+
+
+
+
+// REst Operator clean Code 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+    <style>
+        *{
+            text-align: center;
+            color: firebrick;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h6>Rest Operator</h6>
+    <script>
+    function abc(name, ...rest){
+        let sum = 0;
+        for(let i in rest){
+           sum = sum + rest[i];
+        }
+        document.write(`Your Name is : ${name} <br> the values you provided are : ${rest} <br> and the sum of these values are : ${sum} <br>`);
+      
+    }
+    abc("Hammad Khalil",200,50,100,50,200,300,200);
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        * {
+    color: firebrick;
+    font-family: cursive;
+    background: aliceblue;
+    font-size: smaller;
+}
+        #btn {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+.container{
+    display: grid;
+    justify-content: center;
+
+}
+
+h4{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <button id="btn">Click Me</button>
+</div>
+    <h4 id="demo"></h4>
+    <script>
+        let x = document.getElementById("demo");
+        let y = document.getElementById("btn");
+        y.addEventListener("click", function abc(){
+            x.innerHTML += "Button Clicked! <br>";
+        });
+        y.addEventListener("mouseenter", function abc(){
+            x.innerHTML += "Mouse Entered! <br>";
+        });
+        y.addEventListener("mouseleave", function abc(){
+            x.innerHTML += "Mouse Exit! <br>";
+        });
+        y.addEventListener("drag", function abc(){
+            x.innerHTML += " Dragged! <br>";
+        });
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128128</title>
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+            font-family: cursive;
+        }
+        
+    </style>
+</head>
+<body>
+    <h5 id="name">This Looks Empty</h5>
+    <h5 id="name">This Looks Empty</h5>
+    <h5 id="name">This Looks Empty</h5>
+    <script>
+        let a = document.querySelectorAll("#name");
+        for(i=0;i<a.length;i++){
+            a[i].innerHTML += " &nbsp Without Me";
+            a[i].style.textAlign = "center";
+            a[i].style.backgroundColor = "crimson";
+            a[i].style.color = "white";
+            a[i].style.margin = 0;
+            
+        }
+    </script> -->
+<!-- </body> -->
+<!-- </html>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128128</title>
+</head>
+
+<body>
+<style>
+    *{
+        font-family: cursive;
+        color: coral;
+        text-align: center;
+
+    }
+    body{
+        height: 100wh;
+    }
+</style>
+
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            sayhello() {
+                return `Ur Name is ${this.name} <br> Your Age is ${this.age} <br>`;
+
+            }
+        }
+        let person1 = new Person("Brock Lesnar", 40);
+        let person2 = new Person("John Cena", 45);
+        document.write(person1.sayhello());
+        document.write(person2.sayhello());
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <script>
+        // JavaScript mein, aap ek paragraph element create kar sakte hain
+        var paragraph = document.createElement("p");
+        
+        // Is paragraph mein text daalna
+        var text = document.createTextNode("Yeh ek simple paragraph hai.");
+        paragraph.appendChild(text);
+        
+        // Ab is paragraph ko heading ke andar append karna
+        var heading = document.querySelector("h1"); // "h1" element ko select kiya
+        heading.appendChild(paragraph); // Paragraph ko heading ke andar append kiya
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example</title>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <script>
+        // JavaScript mein, aap ek paragraph element create kar sakte hain
+        var paragraph = document.createElement("p");
+        
+        // Is paragraph mein text daalna
+        var text = document.createTextNode("Yeh ek simple paragraph hai.");
+        paragraph.appendChild(text);
+        
+        // Ab is paragraph ko heading ke andar append karna
+        var heading = document.querySelector("h1"); // "h1" element ko select kiya
+        heading.appendChild(paragraph); // Paragraph ko heading ke andar append kiya
+    </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+
+
+    <script>
+        // // Promise create karen
+        // const orderProduct = new Promise(function (resolve, reject) {
+        //     setTimeout(function () {
+        //         const product = "Iphone X";
+        //         if (product) {
+        //             resolve(product); // Agar product mil gaya, toh promise ko resolve karen
+        //         } else {
+        //             reject("Product not available"); // Agar product nahi mila, toh promise ko reject karen
+        //         }
+        //     }, 2000); // 2 seconds wait karen, jaise order process hota hai
+        // });
+
+        // // Promise ka istemal karen
+        // orderProduct
+        //     .then(function (product) {
+        //         console.log("Product mil gaya: " + product);
+        //         // Ab product ko deliver karen ya aur kuch actions le sakte hain
+        //     })
+        //     .catch(function (error) {
+        //         console.log("Error: " + error);
+        //         // Product nahi mila toh error handle karen
+        //     });
+
+
+        /* Promise create karen
+        const orderProduct = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const product = "Mobile Phone";
+                if (product) {
+                    resolve(product); // Agar product mil gaya, toh promise ko resolve karen
+                } else {
+                    reject("Product not available"); // Agar product nahi mila, toh promise ko reject karen
+                }
+            }, 2000); // 2 seconds wait karen, jaise order process hota hai
+        });
+
+        // Promise ka istemal karen
+        orderProduct
+            .then((product) => {
+                console.log("Product mil gaya: " + product);
+                // Ab product ko deliver karen ya aur kuch actions le sakte hain
+            })
+            .catch((error) => {
+                console.log("Error: " + error);
+                // Product nahi mila toh error handle karen
+            }); */
+
+        /// attempted
+        // const orderProduct = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         const product = "";
+        //         if (product) {
+        //             resolve(product);
+        //         } else {
+        //             reject("Product Not Available ");
+        //         }
+
+        //     }, 4000);
+        // });
+        // orderProduct
+        //     .then((product) => {
+        //         console.log(`Product found   "${product}"`);
+        //     })
+        //     .catch((error) => {
+        //         console.log(`Error "${error}"`)
+        //     });
+
+        // let promise = new Promise((resolve, reject) => {
+        //     const product = "Iphone X";
+        //     setTimeout(() => {
+        //         if (product) {
+        //             resolve(product);
+        //         } else {
+        //             reject("Product Not Found")
+        //         }
+        //     }, 3000);
+
+        // });
+        // promise
+        //     .then((product) => {
+        //         console.log(product + "      " + "Found");
+        //     })
+        //     .catch((error) => {
+        //         console.log("This is Error" + "     " + error);
+        //     });
+
+
+    //     let promise = new Promise((resolve, reject) => {
+    //         const product = "Iphone X";
+    //         setInterval(() => {
+    //             if (product) {
+    //                 resolve(product);
+    //             } else {
+    //                 reject("Nothing Found");
+    //             }
+    //         }, 1000)
+    //     });
+    //     promise
+    //         .then((product) => {
+    //             console.log(product + "  Found");
+    //         })
+    //         .catch((error) => {
+    //             console.log(error);
+    //         });
+    // </script>
+</body>
+
+</html> -->

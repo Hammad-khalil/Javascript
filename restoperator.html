@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+    <style>
+        *{
+            text-align: center;
+            color: firebrick;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h6>Rest Operator</h6>
+    <script>
+    function abc(name, ...rest){
+        let sum = 0;
+        for(let i in rest){
+           sum = sum + rest[i];
+        }
+        document.write(`Your Name is : ${name} <br> the values you provided are : ${rest} <br> and the sum of these values are : ${sum} <br>`);
+      
+    }
+    abc("Hammad Khalil",200,50,100,50,200,300,200);
+    </script>
+</body>
+</html>

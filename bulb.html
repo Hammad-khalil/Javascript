@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turning Bulb off and on using JS</title>
+</head>
+
+<body>
+    <style>
+        body {
+            width: 100%;
+            margin: 0;
+            background-color: black;
+        }
+
+        #flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bulb {
+            width: 200px;
+            height: 300px;
+
+            position: relative;
+            top: 20px;
+        }
+        #btn{
+            background-color: chartreuse;
+        }
+    </style>
+    <div id="flex">
+        <img id="bulb" src="/Javascript/img/bulboff.png" alt="Bulb Off">
+        <button id="btn">Turn off</button>
+    </div>
+    <script>
+        let btn = document.querySelector("#btn");
+        let img = document.querySelector("#bulb");
+        btn.addEventListener("click", toggle);
+        function toggle(){
+            if(btn.textContent.includes("off")){
+                img.src = "/Javascript/img/bulbon.png";
+                btn.textContent = "bulb on";
+            }
+            else if(btn.textContent.includes("on")){
+                img.src = "/Javascript/img/bulboff.png";
+                btn.textContent = "bulb off";
+            }
+            
+        }
+        
+    </script>
+</body>
+
+</html>

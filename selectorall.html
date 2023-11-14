@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selectors</title>
+</head>
+<style>
+    *{
+        font-family: cursive;
+        font-size: small;
+        color: crimson;
+    }
+</style>
+<body>
+    <h6 class="demo">This is heading 1</h6>
+    <h6 class="demo">This is heading 2</h6>
+    <h6 class="demo">This is heading 3</h6>
+    <h6 class="demo">This is heading 4</h6>
+    <h6 class="demo">This is heading 5</h6>
+ <script>
+    // for all at once we have to use for looP
+    // var all = document.querySelectorAll('.demo');
+    // for(i=0;i<all.length;i++){
+    //     all[i].innerHTML = "changed";
+    //     all[i].style.backgroundColor = "black";
+    // }
+    var onlysecond = document.querySelectorAll(".demo")[1];
+    onlysecond.innerHTML = "Done!!!";
+ </script>
+</body>
+</html>

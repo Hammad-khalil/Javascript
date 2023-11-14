@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: cursive;
+            color: chocolate;
+            text-align: center;
+        }
+    </style>
+    <h1>Promise JS</h1>
+    <script>
+        let item = "Iphone X";
+        let promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+
+                if (item) {
+                    resolve(item);
+
+                } else {
+                    reject("Not Found");
+                }
+            }, 1 * 4000);
+        });
+        promise
+            .then((resolve) => {
+                console.log(`${item} Found Successfully !!!`);
+                document.write(`${item} Found Successfully !!!`);
+            })
+            .catch((error) => {
+                console.log(`${item} Not Found !!!`);
+                document.write(`${item} Not Found !!!`);
+            });
+    </script>
+</body>
+
+</html>
